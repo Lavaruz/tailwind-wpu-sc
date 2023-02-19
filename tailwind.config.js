@@ -11,7 +11,10 @@ module.exports = {
         primary: "#0ea5e9",
       },
       screens: {
-        "2xl": "1536px",
+        xl: "1100px",
+      },
+      fontFamily: {
+        inter: Inter,
       },
     },
   },

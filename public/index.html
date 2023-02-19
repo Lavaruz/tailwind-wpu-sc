@@ -5,9 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="">
+    <!-- HEADER SECTION DTART -->
+    <header class="w-full absolute bg-transparent top-0 left-0">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="">
+            <h3 class="font-bold text-lg py-6 text-primary">assamimuzaki</h3>
+          </div>
+          <div class="flex items-center">
+            <button
+              type="button"
+              id="hamburger"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300"
+              ></span>
+              <span class="hamburger-line transition duration-300"></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute top-full py-3 px-4 bg-white rounded shadow right-0 max-w-[200px] w-full lg:static lg:bg-transparent lg:block lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex font-thin">
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base font group-hover:text-primary flex py-2 px-8"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base font group-hover:text-primary flex py-2 px-8"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base font group-hover:text-primary flex py-2 px-8"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base font group-hover:text-primary flex py-2 px-8"
+                    >Clients</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base font group-hover:text-primary flex py-2 px-8"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href=""
+                    class="text-base font group-hover:text-primary flex py-2 px-8"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
     <!-- HERO SECTION START -->
     <section id="hero" class="mt-36">
       <div class="container">
@@ -60,7 +142,7 @@
     <!-- TENTANG SAYA START -->
     <section id="about" class="mt-10 mb-10">
       <div class="container">
-        <div class="flex flex-wrap px-4">
+        <div class="flex flex-col lg:flex-row gap-10 px-4">
           <div class="w-full lg:w-1/2 mb-6">
             <h4 class="font-bold text-primary mb-2">TENTANG SAYA</h4>
             <h2 class="text-2xl font-bold text-dark mb-3">
@@ -123,4 +205,5 @@
     </section>
     <!-- TENTANG SAYA END -->
   </body>
+  <script src="./js/index.js"></script>
 </html>
